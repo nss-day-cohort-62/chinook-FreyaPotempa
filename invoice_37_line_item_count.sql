@@ -1,0 +1,1 @@
+SELECT COUNT(*) as total_line_items FROM InvoiceLine WHERE InvoiceId = '37'

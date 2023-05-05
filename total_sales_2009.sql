@@ -1,0 +1,1 @@
+SELECT SUM(Total) as total_sales_2009 FROM Invoice WHERE InvoiceDate Like '2009%'
