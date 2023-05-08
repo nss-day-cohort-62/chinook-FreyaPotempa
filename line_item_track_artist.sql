@@ -1,1 +1,7 @@
--- Start Here #13 on the list https://github.com/nashville-software-school/bangazon-llc/blob/cohort-62/book-4-bangazon/chapters/CHINOOK.md
+SELECT il.*,
+t.Name AS track_name,
+ar.Name AS artist_name
+FROM InvoiceLine il
+JOIN Track t ON il.TrackId = t.TrackId
+JOIN Album al ON al.AlbumId = t.AlbumId
+JOIN Artist ar ON ar.ArtistId = al.ArtistId
